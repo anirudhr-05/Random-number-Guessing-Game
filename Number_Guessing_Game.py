@@ -9,7 +9,7 @@ attempts = 0
 guessed_number = int(input("\nEnter your guess: "))
 
 while guessed_number != secret_number:
-    if guessed_number < 0 or guessed_number > 100:
+    if guessed_number < 1 or guessed_number > 100:
         print("The Guessed number is out of range! Please guess a number between 1 and 100.")
     elif guessed_number < secret_number:
         print("The guess is Low!")
